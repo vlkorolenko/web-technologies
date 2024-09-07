@@ -1,10 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Questonnaire</title>
 </head>
-<body>
+<header>
+  <h2 align="center">Task №3</h2>
+</header>
+<form method="get" enctype="multipart/form-data">
+  <fieldset>
+    <label>
+      Текстове поле
+      <div style="margin-bottom: 20px;"><input type="text" label="" required></div>
+    </label>
 
-</body>
+    <label>
+      Текстова область
+      <div style="margin-bottom: 20px;"><textarea></textarea></div>
+    </label>
+
+    <label>
+      Пароль
+      <div style="margin-bottom: 20px;"><input type="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" tabindex="1"></div>
+    </label>
+
+    <label>
+      Емайл
+      <div style="margin-bottom: 20px;"><input type="email" autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" tabindex="2"></div>
+    </label>
+
+    <label>
+      Телефон
+      <div style="margin-bottom: 20px;"><input type="tel" pattern="{10}" tabindex="3"></div>
+    </label>
+
+    <label>
+      Дата
+      <div style="margin-bottom: 20px;"><input type="date" required tabindex="4"></div>
+    </label>
+  </fieldset>
+
+  <legend>
+    <div>
+      <p>Блок 1:</p>
+      <label>
+        <input type="radio" checked>
+        1
+      </label>
+      <label>
+        <input type="radio">
+        2
+      </label>
+      <label>
+        <input type="radio">
+        3
+      </label>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <p>Блок 2:</p>
+      <label>
+        <input type="radio">
+        a
+      </label>
+      <label>
+        <input type="radio" checked>
+        b
+      </label>
+      <label>
+        <input type="radio">
+        c
+      </label>
+    </div>
+
+    <label>Чекбокс</label>
+
+    <div style="margin-bottom: 20px;">
+      <label>
+        <input type="checkbox">
+        A
+      </label>
+      <label>
+        <input type="checkbox">
+        B
+      </label>
+      <label>
+        <input type="checkbox">
+        C
+      </label>
+      <label>
+        <input type="checkbox">
+        D
+      </label>
+    </div>
+  </legend>
+
+  <fieldset>
+    <label>
+      Випадсписок
+      <div style="margin-bottom: 20px;">
+        <select>
+          <option>Значення 1</option>
+          <option>Значення 2</option>
+          <option selected>Значення (3)</option>
+          <option>Значення 4</option>
+          <option>Значення 5</option>
+        </select>
+      </div>
+    </label>
+
+    <label>
+      Ще випад список
+      <div style="margin-bottom: 20px;" required>
+        <select multiple>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+          <option>F</option>
+        </select>
+      </div>
+    </label>
+
+    <label>
+      І ще щось
+      <div style="margin-bottom: 20px;">
+        <select>
+          <optgroup label="Group 1">
+            <option>num1.1</option>
+            <option>num1.2</option>
+            <option>num1.3</option>
+          </optgroup>
+          <optgroup label="Group 2">
+            <option>num2.1</option>
+            <option>num2.2</option>
+            <option>num2.3</option>
+          </optgroup>
+          <optgroup label="Group 3">
+            <option>num3.1</option>
+            <option>num3.2</option>
+            <option>num3.3</option>
+          </optgroup>
+          <optgroup label="Group 4">
+            <option>num4.1</option>
+            <option>num4.2</option>
+            <option>num4.3</option>
+          </optgroup>
+        </select>
+      </div>
+    </label>
+
+
+    <label>
+      Детейлс
+      <div style="margin-bottom: 20px;">
+        <input list="123">
+        <datalist id="123">
+          <option value="potato"></option>
+          <option value="apple"></option>
+          <option value="banana"></option>
+          <option value="tomato"></option>
+        </datalist>
+      </div>
+    </label>
+  </fieldset>
+
+  <legend>
+    <label>
+      2 кнопки
+      <div style="margin-bottom: 20px;">
+        <button type="submit">SUB</button>
+        <button type="reset">RES</button>
+      </div>
+    </label>
+
+    <label>
+      Завантаження тільки аудіо
+      <div style="margin-bottom: 20px;">
+        <button>
+          <input type="file" accept="audio/*" multiple>
+        </button>
+      </div>
+    </label>
+
+    <div style="margin-bottom: 20px;">
+      <button type="submit" method="get">SUBMIT</button>
+    </div>
+  </legend>
+</form>
+
+
+<footer>
+  <div style="margin-top: 50px" align="center">
+    <a href="file:///C:/Users/korol/WebstormProjects/web-technologies/Lab3/index.html">Повернутись на головну</a>
+  </div>
+</footer>
 </html>
