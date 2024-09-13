@@ -1,0 +1,42 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+.red-text {
+    color: red;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+#italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.shadow {
+    text-shadow: 5px -5px 3px #0b79d7;
+}
+
+.strikethrough-uppercase-indent {
+    text-decoration: line-through; /* Перекреслений текст */
+    text-transform: uppercase; /* Текст у верхньому регістрі */
+    text-indent: 50px; /* Відступ першого рядка на 50px */
+}
+
+.spacing {
+    word-spacing: 50px;
+    letter-spacing: 30px;
+}
