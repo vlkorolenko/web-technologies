@@ -1,0 +1,45 @@
+a {
+    color: purple;
+}
+
+.green-color {
+    color: green;
+}
+
+ul ul {
+    list-style-type: none;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.mark {
+    list-style-type: none; /* Прибирає стандартні маркери */
+    padding-left: 10px;
+}
+
+.mark li {
+    background-image: url("./img/mark.webp");
+    background-size: 15px 13px; /* Встановлює розмір піктограми */
+    background-repeat: no-repeat; /* Забороняє повторення фону */
+    background-position: 0 5px; /* Розташовує піктограму */
+    padding-left: 30px; /* Відступ для тексту, щоб не перекривати піктограму */
+}
+
+.square a {
+    text-decoration: none;
+}
+
+.numbered {
+    list-style-type: decimal; /* Нумерація для списку */
+    padding-left: 55px; /* Відступ для тексту */
+
+}
+
+.numbered li {
+    padding-left: 0; /* Відступ для тексту, щоб не перекривати нумерацію */
+}
+
+
+
