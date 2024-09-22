@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилі для заголовків */
+h1 {
+    font-size: 36px;
+    color: darkred;
+    text-shadow: 2px 2px 5px gray;
+}
+
+h2 {
+    font-size: 28px;
+    color: darkblue;
+    font-style: italic;
+}
+
+/* Стилі для основного тексту */
+b {
+    color: darkgreen;
+    font-size: 18px;
+}
+
+u {
+    text-decoration: underline;
+}
+
+s {
+    color: red;
+    text-decoration: line-through;
+}
+
+sub {
+    font-size: 12px;
+}
+
+mark {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Стилі для горизонтальної лінії */
+hr {
+    margin: 20px auto;
+    border: none;
+    border-top: 4px solid darkgreen;
+    width: 40%;
+}
+
+/* Стилі для цитати */
+cite {
+    font-style: italic;
+    color: gray;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Додаємо стиль для div */
+div {
+    margin: 20px auto;
+    text-align: center;
+}
