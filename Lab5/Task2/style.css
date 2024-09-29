@@ -1,0 +1,71 @@
+/* Стилі для таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Стилі для заголовків */
+thead th {
+    padding: 15px;
+    background-color: rgb(237, 227, 255); /* Найсвітліший фіолетовий */
+    color: white;
+    font-weight: bold;
+}
+
+thead th:nth-child(2) {
+    background-color: rgb(222, 200, 255); /* Трохи темніше */
+}
+
+thead th:nth-child(3) {
+    background-color: rgb(207, 172, 255); /* Темніше */
+}
+
+thead th:nth-child(4) {
+    background-color: rgb(192, 145, 255); /* Ще темніше */
+}
+
+thead th:nth-child(5) {
+    background-color: rgb(177, 117, 255); /* Найтемніший фіолетовий */
+}
+
+/* Стилі для рядків таблиці */
+tbody tr:nth-child(odd) {
+    background-color: rgb(245, 240, 255); /* Дуже світлий відтінок */
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(237, 227, 255); /* Трохи темніший відтінок */
+}
+
+/* Стилі для першого стовпця */
+tbody td:first-child {
+    font-weight: bold;
+    background-color: rgb(230, 215, 255); /* Трохи світліший фіолетовий */
+    padding: 10px;
+}
+
+tbody td:first-child:nth-child(2) {
+    background-color: rgb(207, 172, 255); /* Темніший відтінок */
+}
+
+tbody td:first-child:nth-child(3) {
+    background-color: rgb(192, 145, 255); /* Ще темніший */
+}
+
+tbody td:first-child:nth-child(4) {
+    background-color: rgb(177, 117, 255); /* Найтемніший відтінок */
+}
+
+/* Стилі для клітинок */
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Стилі для символів "+" і "-" */
+td {
+    font-size: 18px;
+    color: #333;
+}
+

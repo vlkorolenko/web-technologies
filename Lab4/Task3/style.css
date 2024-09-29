@@ -15,16 +15,7 @@ ul ul {
 }
 
 .mark {
-    list-style-type: none; /* Прибирає стандартні маркери */
-    padding-left: 10px;
-}
-
-.mark li {
-    background-image: url("./img/mark.webp");
-    background-size: 15px 13px; /* Встановлює розмір піктограми */
-    background-repeat: no-repeat; /* Забороняє повторення фону */
-    background-position: 0 5px; /* Розташовує піктограму */
-    padding-left: 30px; /* Відступ для тексту, щоб не перекривати піктограму */
+    list-style-image: url("./img/mark.svg");
 }
 
 .square a {

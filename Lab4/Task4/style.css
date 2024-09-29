@@ -1,59 +1,48 @@
-/* 4.1. Курсив, жирність, підкреслення для span всередині p з класом .text-background */
 .text-background span {
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
 }
 
-/* 4.2. Жовтий фон для span всередині .text-background, який всередині div */
 div .text-background span {
     background-color: yellow;
 }
 
-/* 4.3. Сірий фон і перекреслений текст для span всередині іншого span */
 span span {
     background-color: grey;
     text-decoration: line-through;
 }
 
-/* 4.4. Шрифт 18px і верхній регістр для span всередині span, який всередині ol */
 ol span span {
     font-size: 18px;
     text-transform: uppercase;
 }
 
-/* 4.5. Тінь тексту і відступ для абзаців на першому рівні всередині section */
 section > p {
     text-shadow: 3px 3px 5px #333; /* Колір тіні можна змінити */
     text-indent: 50px;
 }
 
-/* 4.6. Заміна маркерів списку на зображення для ul всередині li */
 li > ul {
     list-style-image: url('./img/li.svg');
 }
 
-/* 4.7. Інтервал між словами 50px для p з класом .text-background на першому рівні в div */
 div > .text-background {
     word-spacing: 50px;
 }
 
-/* 4.8. Жирний шрифт для абзаців на першому рівні в div з класом .text-bold */
 .text-bold > p {
     font-weight: bold;
 }
 
-/* 4.9. Міжрядковий інтервал 45px для абзаців в section, який є прямим нащадком div.text-bold */
 .text-bold > section > p {
     line-height: 45px;
 }
 
-/* 4.10. Коричневий фон для абзаців, які йдуть безпосередньо після img */
 img + p {
     background-color: brown;
 }
 
-/* 4.11. Червоний текст для абзаців, що йдуть після section на тому ж рівні */
 section ~ p {
     color: red;
 }
