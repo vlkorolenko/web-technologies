@@ -1,0 +1,119 @@
+/* Загальний стиль для тіла документа */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Додаємо правило box-sizing для всіх елементів */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Центрування форми та обмеження її ширини */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+header h2 {
+    text-align: center;
+    color: #4A90E2;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стиль для полів форми */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Додаємо коректні відступи для radio та checkbox */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Стиль для кнопок */
+button {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* відступ між кнопками */
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Стиль для блоків форми */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Вирівнювання тексту легенд і полів */
+legend, label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Стиль для footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4A90E2;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #357ABD;
+}
+
+/* Додаємо деякі відступи для чекбоксів і радіо-кнопок */
+fieldset div {
+    margin-bottom: 15px;
+}
+
+/* Поліпшення відображення списків */
+select[multiple] {
+    height: auto;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #4A90E2;
+    outline: none;
+}

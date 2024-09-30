@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questonnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h2>Task №3</h2>
+</header>
+<form method="get" enctype="multipart/form-data">
+    <fieldset>
+        <label>Текстове поле
+            <input type="text" label="" required>
+        </label>
+
+        <label>Текстова область
+            <textarea></textarea>
+        </label>
+
+        <label>Пароль
+            <input type="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" tabindex="1">
+        </label>
+
+        <label>Емайл
+            <input type="email" autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" tabindex="2">
+        </label>
+
+        <label>Телефон
+            <input type="tel" pattern="{10}" tabindex="3">
+        </label>
+
+        <label>Дата
+            <input type="date" required tabindex="4">
+        </label>
+    </fieldset>
+
+    <legend>
+        <p>Блок 1:</p>
+        <label><input type="radio" checked>1</label>
+        <label><input type="radio">2</label>
+        <label><input type="radio">3</label>
+
+        <p>Блок 2:</p>
+        <label><input type="radio">a</label>
+        <label><input type="radio" checked>b</label>
+        <label><input type="radio">c</label>
+
+        <br><label>Чекбокс</label><br>
+        <label><input type="checkbox">A</label>
+        <label><input type="checkbox">B</label>
+        <label><input type="checkbox">C</label>
+        <label><input type="checkbox">D</label>
+    </legend>
+
+    <fieldset>
+        <label>Випадсписок
+            <select>
+                <option>Значення 1</option>
+                <option>Значення 2</option>
+                <option selected>Значення (3)</option>
+                <option>Значення 4</option>
+                <option>Значення 5</option>
+            </select>
+        </label>
+
+        <label>Ще випад список
+            <select multiple>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+            </select>
+        </label>
+
+        <label>І ще щось
+            <select>
+                <optgroup label="Group 1">
+                    <option>num1.1</option>
+                    <option>num1.2</option>
+                    <option>num1.3</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>num2.1</option>
+                    <option>num2.2</option>
+                    <option>num2.3</option>
+                </optgroup>
+                <optgroup label="Group 3">
+                    <option>num3.1</option>
+                    <option>num3.2</option>
+                    <option>num3.3</option>
+                </optgroup>
+                <optgroup label="Group 4">
+                    <option>num4.1</option>
+                    <option>num4.2</option>
+                    <option>num4.3</option>
+                </optgroup>
+            </select>
+        </label>
+
+        <label>Детейлс
+            <input list="123">
+            <datalist id="123">
+                <option value="potato"></option>
+                <option value="apple"></option>
+                <option value="banana"></option>
+                <option value="tomato"></option>
+            </datalist>
+        </label>
+    </fieldset>
+
+    <legend>
+        <label>2 кнопки</label>
+        <button type="submit">SUB</button>
+        <button type="reset">RES</button>
+
+        <br><label>Завантаження тільки аудіо</label>
+        <button>
+            <input type="file" accept="audio/*" multiple>
+        </button>
+
+        <button type="submit" method="get">SUBMIT</button>
+    </legend>
+</form>
+
+<footer>
+    <div align="center">
+        <a href="index.html">Повернутись на головну</a>
+    </div>
+</footer>
+</body>
+</html>
