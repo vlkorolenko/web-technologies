@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: url(https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #000;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    transition: .5s;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: #000;
+    font-size: 15px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background: rgb(101, 101, 101);
+    color: #fff;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1); 
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+.horizontal-menu {
+    display: none;
+}
+
+
+/* Залиште існуючі стилі */
+
+.vertical-menu-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 56px;
+    margin: 300px 0 0 0;
+    box-shadow: 0 5px 10px #000;
+    z-index: 1000; /* Змініть це значення за необхідності */
+}
+
+.vertical-menu-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-menu-div li {
+    position: relative;
+}
+
+.vertical-menu-div a {
+    display: block;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.vertical-menu-div a:hover {
+    background: rgb(101, 101, 101);
+    color: #fff;
+}
+
+
+.vertical-menu-div ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    background: #fff;
+    box-shadow: 0 5px 10px #000;
+}
+
+.vertical-menu-div ul ul li {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.vertical-menu-div ul ul a {
+    display: block;
+    padding: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.vertical-menu-div ul ul a:hover {
+    background: rgb(101, 101, 101);
+    color: #fff;
+}
+
+.vertical-menu-div ul ul ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px #000;
+}
+
+.vertical-menu-div ul ul ul li {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.vertical-menu-div ul ul ul a {
+    display: block;
+    padding: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.vertical-menu-div ul ul ul a:hover {
+    background: rgb(101, 101, 101);
+    color: #fff;
+}
+
+.vertical-menu-div li:hover > ul {
+    display: block;
+}
